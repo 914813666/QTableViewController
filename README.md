@@ -4,10 +4,11 @@
     ========
     ![image](https://github.com/914813666/QTableViewController/blob/master/infoImg/Simulator%20Screen%20Shot%202015%E5%B9%B412%E6%9C%8818%E6%97%A5%20%E4%B8%8B%E5%8D%882.22.03.png)
     
-_tableHandler = ({
+    '_tableHandler = ({
       QTableDataDelegate * tdd = [[QTableDataDelegate alloc] initWithItems: _dataSource cellIdentifier:@"MyCell"];
         tdd;
-    });
+    });'
+   
    
     **需要自定义高度时实现**
    _tableHandler.cellHeightBlock = ^CGFloat (NSIndexPath * indexPath, id item) {
