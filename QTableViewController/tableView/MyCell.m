@@ -7,6 +7,7 @@
 //
 
 #import "MyCell.h"
+#import <UIImageView+WebCache.h>
 
 @implementation MyCell
 
@@ -29,10 +30,12 @@
     
     
     NSURL * url = [NSURL URLWithString: userInfo.photo];
-    NSData * data = [NSData dataWithContentsOfURL:url];
-    UIImage * img = [UIImage imageWithData:data];
+//    NSData * data = [NSData dataWithContentsOfURL:url];
+//    UIImage * img = [UIImage imageWithData:data];
+//    
+//    self.photoImageView.image = img;
     
-    self.photoImageView.image = img;
+    [self.photoImageView sd_setImageWithURL: url];
     self.nameLabel.text = userInfo.name;
     self.infoLabel.text = userInfo.info;
 }

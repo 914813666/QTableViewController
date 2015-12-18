@@ -13,7 +13,7 @@ typedef void (^ TableViewCellConfigureBlock) (NSIndexPath * indexPath, id item, 
 typedef CGFloat (^ CellHeightBlock) (NSIndexPath * indexPath, id item);
 typedef void (^ DidSelectCellBlock) (NSIndexPath * indexPath, id item);
 
-@interface QTableDataDelegate : NSObject <UITableViewDataSource, UITableViewDelegate>
+@interface QTableViewHandler : NSObject <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, copy) TableViewCellConfigureBlock configureBlock;
 @property (nonatomic, copy) DidSelectCellBlock didSelectBlock;
 @property (nonatomic, copy) CellHeightBlock cellHeightBlock;

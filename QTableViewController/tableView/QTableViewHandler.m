@@ -6,15 +6,15 @@
 //  Copyright © 2015年 qzp. All rights reserved.
 //
 
-#import "QTableDataDelegate.h"
+#import "QTableViewHandler.h"
 #import "UITableViewCell+Extension.h"
-@interface QTableDataDelegate ()
+@interface QTableViewHandler ()
 @property (nonatomic, strong) NSArray * items;
 @property (nonatomic, copy) NSString * cellIdentifier;
 
 @end
 
-@implementation QTableDataDelegate
+@implementation QTableViewHandler
 
 - (id)initWithItems:(NSArray *)items
      cellIdentifier:(NSString *)cellIdentifier

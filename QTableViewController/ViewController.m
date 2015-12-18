@@ -8,12 +8,12 @@
 
 #import "ViewController.h"
 #import "MyCell.h"
-#import "QTableDataDelegate.h"
+#import "QTableViewHandler.h"
 #import "UITableViewCell+Extension.h"
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface ViewController ()
 
 @property (nonatomic, strong) UITableView * tableView;
-@property (nonatomic, strong) QTableDataDelegate * tableHandler;
+@property (nonatomic, strong) QTableViewHandler * tableHandler;
 @property (nonatomic, strong) NSMutableArray * dataSource;
 
 @end
@@ -67,20 +67,11 @@
         tV;
     });
     
-//    [self usual];
     [self setup];
     
 }
 
-- (void)  usual {
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    _tableView.rowHeight = UITableViewAutomaticDimension;
-    _tableView.estimatedRowHeight = 100;
-    UINib * nib = [UINib nibWithNibName:@"MyCell" bundle:nil];
-//    [UITableViewCell registerTable:self.tableView nibName:@"MyCell"];
-    [_tableView registerNib: nib forCellReuseIdentifier:@"MyCell"];
-}
+
 
 -(void) setup {
   
@@ -88,7 +79,7 @@
     
     _tableHandler = ({
 
-        QTableDataDelegate * tdd = [[QTableDataDelegate alloc] initWithItems: _dataSource cellIdentifier:@"MyCell"];
+        QTableViewHandler * tdd = [[QTableViewHandler alloc] initWithItems: _dataSource cellIdentifier:@"MyCell"];
         tdd;
     });
     
@@ -104,8 +95,6 @@
         NSLog(@"%@-%@",indexPath,item);
     };
 
-
-    
     //绑定数据源和代理
     [self.tableHandler handleTableViewDataSourceAndDelegate: self.tableView];
     
