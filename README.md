@@ -8,10 +8,12 @@ _tableHandler = ({
       QTableDataDelegate * tdd = [[QTableDataDelegate alloc] initWithItems: _dataSource cellIdentifier:@"MyCell"];
         tdd;
     });
+    /**
     //需要自定义高度时实现
 //    _tableHandler.cellHeightBlock = ^CGFloat (NSIndexPath * indexPath, id item) {
 //        return 44;
 //    };
+*/
 
 //配置样式
     _tableHandler.configureBlock =  ^ (NSIndexPath * indexPath, UserInfo  * item, UITableViewCell * cell) {
@@ -22,8 +24,7 @@ _tableHandler = ({
     _tableHandler.didSelectBlock =^(NSIndexPath * indexPath, id item) {
         NSLog(@"%@-%@",indexPath,item);
     };
-
-    //绑定数据源和代理
+//绑定数据源和代理
     [self.tableHandler handleTableViewDataSourceAndDelegate: self.tableView];
     
     #------------
