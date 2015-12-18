@@ -13,12 +13,12 @@
 		0F30866E1C23A2D900A68A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F30866C1C23A2D900A68A31 /* Main.storyboard */; };
 		0F3086701C23A2D900A68A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F30866F1C23A2D900A68A31 /* Assets.xcassets */; };
 		0F3086731C23A2D900A68A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3086711C23A2D900A68A31 /* LaunchScreen.storyboard */; };
-		0F30867D1C23A32A00A68A31 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30867C1C23A32A00A68A31 /* UITableViewCell+Extension.m */; };
-		0F3086801C23A4F100A68A31 /* QTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30867F1C23A4F100A68A31 /* QTableViewHandler.m */; };
-		0F3086831C23ADBA00A68A31 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3086821C23ADBA00A68A31 /* UserInfo.m */; };
-		0F3086871C23AE5000A68A31 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3086851C23AE5000A68A31 /* MyCell.m */; };
-		0F3086881C23AE5000A68A31 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3086861C23AE5000A68A31 /* MyCell.xib */; };
 		0F30868A1C23E43C00A68A31 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0F3086891C23E43C00A68A31 /* Podfile */; };
+		0F3086951C23E6E000A68A31 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F30868C1C23E6E000A68A31 /* MyCell.m */; };
+		0F3086961C23E6E000A68A31 /* MyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F30868D1C23E6E000A68A31 /* MyCell.xib */; };
+		0F3086971C23E6E000A68A31 /* QTableViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3086901C23E6E000A68A31 /* QTableViewHandler.m */; };
+		0F3086981C23E6E000A68A31 /* UITableViewCell+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3086921C23E6E000A68A31 /* UITableViewCell+Extension.m */; };
+		0F3086991C23E6E000A68A31 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3086941C23E6E000A68A31 /* UserInfo.m */; };
 		CBEA625D12C6C14C084A65C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 821D265758D12952FEACAD8E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -33,16 +33,16 @@
 		0F30866F1C23A2D900A68A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3086721C23A2D900A68A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F3086741C23A2D900A68A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F30867B1C23A32A00A68A31 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
-		0F30867C1C23A32A00A68A31 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
-		0F30867E1C23A4F100A68A31 /* QTableViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTableViewHandler.h; sourceTree = "<group>"; };
-		0F30867F1C23A4F100A68A31 /* QTableViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTableViewHandler.m; sourceTree = "<group>"; };
-		0F3086811C23ADBA00A68A31 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
-		0F3086821C23ADBA00A68A31 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
-		0F3086841C23AE5000A68A31 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
-		0F3086851C23AE5000A68A31 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
-		0F3086861C23AE5000A68A31 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
 		0F3086891C23E43C00A68A31 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		0F30868B1C23E6E000A68A31 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		0F30868C1C23E6E000A68A31 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		0F30868D1C23E6E000A68A31 /* MyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCell.xib; sourceTree = "<group>"; };
+		0F30868F1C23E6E000A68A31 /* QTableViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTableViewHandler.h; sourceTree = "<group>"; };
+		0F3086901C23E6E000A68A31 /* QTableViewHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTableViewHandler.m; sourceTree = "<group>"; };
+		0F3086911C23E6E000A68A31 /* UITableViewCell+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Extension.h"; sourceTree = "<group>"; };
+		0F3086921C23E6E000A68A31 /* UITableViewCell+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Extension.m"; sourceTree = "<group>"; };
+		0F3086931C23E6E000A68A31 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		0F3086941C23E6E000A68A31 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
 		155EC4DD8594F04D04DA57E4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6768FFBBD2BA78BA6EFEBC30 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		821D265758D12952FEACAD8E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +82,12 @@
 		0F3086621C23A2D900A68A31 /* QTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0F30867A1C23A2FE00A68A31 /* tableView */,
+				0F30868B1C23E6E000A68A31 /* MyCell.h */,
+				0F30868C1C23E6E000A68A31 /* MyCell.m */,
+				0F30868D1C23E6E000A68A31 /* MyCell.xib */,
+				0F30868E1C23E6E000A68A31 /* QTableViewHandler */,
+				0F3086931C23E6E000A68A31 /* UserInfo.h */,
+				0F3086941C23E6E000A68A31 /* UserInfo.m */,
 				0F3086661C23A2D900A68A31 /* AppDelegate.h */,
 				0F3086671C23A2D900A68A31 /* AppDelegate.m */,
 				0F3086691C23A2D900A68A31 /* ViewController.h */,
@@ -104,20 +109,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0F30867A1C23A2FE00A68A31 /* tableView */ = {
+		0F30868E1C23E6E000A68A31 /* QTableViewHandler */ = {
 			isa = PBXGroup;
 			children = (
-				0F30867B1C23A32A00A68A31 /* UITableViewCell+Extension.h */,
-				0F30867C1C23A32A00A68A31 /* UITableViewCell+Extension.m */,
-				0F30867E1C23A4F100A68A31 /* QTableViewHandler.h */,
-				0F30867F1C23A4F100A68A31 /* QTableViewHandler.m */,
-				0F3086811C23ADBA00A68A31 /* UserInfo.h */,
-				0F3086821C23ADBA00A68A31 /* UserInfo.m */,
-				0F3086841C23AE5000A68A31 /* MyCell.h */,
-				0F3086851C23AE5000A68A31 /* MyCell.m */,
-				0F3086861C23AE5000A68A31 /* MyCell.xib */,
+				0F30868F1C23E6E000A68A31 /* QTableViewHandler.h */,
+				0F3086901C23E6E000A68A31 /* QTableViewHandler.m */,
+				0F3086911C23E6E000A68A31 /* UITableViewCell+Extension.h */,
+				0F3086921C23E6E000A68A31 /* UITableViewCell+Extension.m */,
 			);
-			path = tableView;
+			path = QTableViewHandler;
 			sourceTree = "<group>";
 		};
 		235789D716BE1937433DAC1F /* Pods */ = {
@@ -198,9 +198,9 @@
 			files = (
 				0F30868A1C23E43C00A68A31 /* Podfile in Resources */,
 				0F3086731C23A2D900A68A31 /* LaunchScreen.storyboard in Resources */,
-				0F3086881C23AE5000A68A31 /* MyCell.xib in Resources */,
 				0F3086701C23A2D900A68A31 /* Assets.xcassets in Resources */,
 				0F30866E1C23A2D900A68A31 /* Main.storyboard in Resources */,
+				0F3086961C23E6E000A68A31 /* MyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,12 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F30866B1C23A2D900A68A31 /* ViewController.m in Sources */,
+				0F3086981C23E6E000A68A31 /* UITableViewCell+Extension.m in Sources */,
+				0F3086971C23E6E000A68A31 /* QTableViewHandler.m in Sources */,
+				0F3086951C23E6E000A68A31 /* MyCell.m in Sources */,
 				0F3086681C23A2D900A68A31 /* AppDelegate.m in Sources */,
-				0F3086801C23A4F100A68A31 /* QTableViewHandler.m in Sources */,
 				0F3086651C23A2D900A68A31 /* main.m in Sources */,
-				0F3086831C23ADBA00A68A31 /* UserInfo.m in Sources */,
-				0F30867D1C23A32A00A68A31 /* UITableViewCell+Extension.m in Sources */,
-				0F3086871C23AE5000A68A31 /* MyCell.m in Sources */,
+				0F3086991C23E6E000A68A31 /* UserInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
