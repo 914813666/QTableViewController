@@ -12,6 +12,7 @@
 @property (nonatomic, strong) NSArray * items;
 @property (nonatomic, copy) NSString * cellIdentifier;
 
+
 @end
 
 @implementation QTableViewHandler
@@ -32,6 +33,8 @@
     return self;
 }
 
+
+
 - (id)initWithItems:(NSArray *)items cellIdentifier:(NSString *)cellIdentifier {
     self = [super init];
     if (self) {
@@ -41,6 +44,16 @@
     return self;
 }
 
+- (id)initWithItems:(NSArray *)items {
+    self = [super init];
+    if (self) {
+        self.items = items;
+        self.cellIdentifier = @"Q_System";
+    }
+    return self;
+}
+
+///默认indexPath.row对应每个dataSource .相应返回item
 - (id)itemAtIndexPath:(NSIndexPath *)indexPath {
     return self.items[indexPath.row];
 }
@@ -66,8 +79,13 @@
     id item = [self itemAtIndexPath: indexPath];
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier: self.cellIdentifier];
     if (!cell) {
-        [UITableViewCell registerTable:tableView nibName:self.cellIdentifier];
-        cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+        if ([self.cellIdentifier isEqualToString: @"Q_System"]) {
+            cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"Q_System"];
+            
+        } else {
+            [UITableViewCell registerTable:tableView nibName:self.cellIdentifier];
+            cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
+        }
     }
     self.configureBlock(indexPath,item,cell);
     return cell;

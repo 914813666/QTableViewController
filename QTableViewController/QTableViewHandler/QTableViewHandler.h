@@ -18,16 +18,22 @@ typedef void (^ DidSelectCellBlock) (NSIndexPath * indexPath, id item);
 @property (nonatomic, copy) DidSelectCellBlock didSelectBlock;
 @property (nonatomic, copy) CellHeightBlock cellHeightBlock;
 
+///初始化并回调
+-(id)initWithItems:(NSArray *)items
+    cellIdentifier:(NSString *)cellIdentifier
+    configureCellBlock:(TableViewCellConfigureBlock)aConfigure
+   cellHeightBlock:(CellHeightBlock)cellheightBlock
+    didSelectBlock:(DidSelectCellBlock)didSelectBlock;
 
-/////初始化方法: 传数据源, cellIdentifier .
+/////初始化方法: 传数据源, cellIdentifier == xib的名称
 - (id) initWithItems: (NSArray *) items cellIdentifier: (NSString *) cellIdentifier;
 
-
+///初始化系统默认表格
+- (id) initWithItems:(NSArray *)items;
 
 /// 将UITableViewDataSource和UITableViewDelegate设于QTableDataDelegate
 - (void) handleTableViewDataSourceAndDelegate: (UITableView *) tableView;
-///默认indexPath.row对应每个dataSource .相应返回item
-- (id) itemAtIndexPath: (NSIndexPath *) indexPath;
+
 
 
 
