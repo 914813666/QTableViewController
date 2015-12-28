@@ -80,7 +80,11 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier: self.cellIdentifier];
     if (!cell) {
         if ([self.cellIdentifier isEqualToString: @"Q_System"]) {
-            cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:@"Q_System"];
+            UITableViewCellStyle style = UITableViewCellStyleDefault;
+            if (self.style) {
+                style = self.style;
+            }
+            cell = [[UITableViewCell alloc] initWithStyle: style reuseIdentifier:@"Q_System"];
             
         } else {
             [UITableViewCell registerTable:tableView nibName:self.cellIdentifier];

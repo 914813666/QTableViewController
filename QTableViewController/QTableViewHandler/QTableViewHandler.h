@@ -17,6 +17,7 @@ typedef void (^ DidSelectCellBlock) (NSIndexPath * indexPath, id item);
 @property (nonatomic, copy) TableViewCellConfigureBlock configureBlock;
 @property (nonatomic, copy) DidSelectCellBlock didSelectBlock;
 @property (nonatomic, copy) CellHeightBlock cellHeightBlock;
+@property (nonatomic, assign) UITableViewCellStyle  style;
 
 ///初始化并回调
 -(id)initWithItems:(NSArray *)items
